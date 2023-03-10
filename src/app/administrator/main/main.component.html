@@ -1,0 +1,14 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <span>Angular-adminApp</span>
+    </mat-toolbar>
+    <h1 style="text-align: center;">Employees Data</h1>
+    <button mat-flat-button color="primary" style="margin-right:1px;" routerLink="add">Add Employee</button>
+    <button mat-flat-button color="accent" routerLink="employments">Employees Lists</button>
+    <div class="container-content">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
