@@ -3,7 +3,43 @@ table {
   }
 #show{
   display: block;
+  position: fixed;
+  top: 11%;
+  right: 15px;
+  z-index: 9;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  padding: 20px;
+  width: 40%; 
+  height: 85%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 5s ease-in-out;
 }
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.content{
+  padding: 50px;
+  background-color: white;
+  border-radius: 5px;
+  width: 50%; 
+  position: absolute; 
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 50%;
+}
+
 .hidden{
   display: none;
 }

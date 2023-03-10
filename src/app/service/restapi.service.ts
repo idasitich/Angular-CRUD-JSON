@@ -18,7 +18,6 @@ export class RestapiService {
   deleteData(id: string){
     return this.http.delete(`http://localhost:3000/users/${id}`)
   }
-
   updateData(id: number, data: any){
     return this.http.patch(`http://localhost:3000/users/${id}`, data)
   }

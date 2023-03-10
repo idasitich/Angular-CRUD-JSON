@@ -27,7 +27,8 @@
   </table>
   
 <div [id]="show" class="hidden" >
-  <form  #updateNew="ngForm" (ngSubmit)="updateNewUser(number.value, updateNew.value)" >
+  <form class="content" #updateNew="ngForm" (ngSubmit)="updateNewUser(number.value, updateNew.value)" >
+    <a class="close" href="#">&times;</a>
             <mat-list role="list">
             <mat-form-field class="example-form" style="display: none;">
             <mat-label>No</mat-label>
@@ -53,3 +54,4 @@
       <button mat-flat-button color="primary" style="width: 50%;">Submit</button>
   </form>
 </div>
+

@@ -64,6 +64,7 @@ export class EmploymentsComponent {
       })
   }  
   updateNewUser(id:any, value: any){
+    this.show="";
     let body = {
       id : value.id,
       code: value.code,
