@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { RestapiService } from 'src/app/service/restapi.service';
-
+'@angular/core';
+import {MatPaginator} from '@angular/material/paginator';
+import {MatTableDataSource} from '@angular/material/table';
 
 
 @Component({

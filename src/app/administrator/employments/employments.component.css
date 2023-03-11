@@ -1,6 +1,4 @@
-table {
-    width: 100%;
-  }
+
 #show{
   display: block;
   position: fixed;
@@ -42,4 +40,15 @@ table {
 
 .hidden{
   display: none;
+}
+.table-employees{
+  padding-top: 10%;
+}
+.head-table{
+  background-color: #3f51b5;
+  padding: 20px 50px;
+  color: white;
+}
+.row-table{
+  background-color: rgba(211, 213, 212, 0.955);
 }

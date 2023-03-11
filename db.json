@@ -1,3 +1,11 @@
 {
-  "users": []
+  "users": [
+    {
+      "code": "200",
+      "name": "ipah",
+      "salary": "2 juta",
+      "role": "mahasiswa",
+      "id": 1
+    }
+  ]
 }

@@ -1,13 +1,13 @@
-<table>
+<table class="table-employees">
   <thead>
     <tr>
-      <th *ngFor="let display of displayedColumns">
+      <th class="head-table" *ngFor="let display of displayedColumns">
         {{display}}
       </th>
-  </tr>
+    </tr>
   </thead>  
   <tbody>
-  <tr *ngFor="let item of userdata "> 
+  <tr class="row-table" *ngFor="let item of userdata "> 
     <td name="Code">{{item.code}}</td>
     <td name="Name">{{item.name}}</td>
     <td name="Salary">{{item.salary}}</td>
@@ -45,7 +45,7 @@
             <input matInput [ngModel]="role" name="role"[value]="role">
             </mat-form-field>
       </mat-list>
-      <button mat-flat-button color="primary" style="width: 50%;">Submit</button>
+      <button mat-flat-button color="primary" style="width: 50%;">Update</button>
   </form>
 </div>
 
