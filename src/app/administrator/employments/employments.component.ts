@@ -16,21 +16,23 @@ export class EmploymentsComponent {
   }
 
   userdata: any;
-  displayedColumns: string[] = ['code', 'name', 'salary', 'role','action'];
+  displayedColumns: string[] = ['Code', 'Name', 'Salary', 'Role','Action'];
 
   update=false;
 
   getAllusers(){
     this.service.GetallUsers().subscribe(response=>{
       this.userdata=response;
-      console.log(this.userdata);
+      console.log(this.userdata[0])
     })
   }
 
   deleteUser(id: string){
    {
-
       return this.service.deleteData(id).subscribe(response=>{
+        alert("Do you want to delete the data?")
+        const deletedContrat = this.userdata.find((x: any) => x.id === this.userdata.id);
+        this.userdata.splice(this.userdata.indexOf(deletedContrat), 1);
       });
   }
   }
@@ -44,6 +46,7 @@ export class EmploymentsComponent {
   role="";
   id = "";
  
+
 
   updateUser(id:any, value: any) {
     this.show="show";
@@ -76,6 +79,7 @@ export class EmploymentsComponent {
     this.service.updateData(id, body)
       .subscribe(response => {
         console.log(response);
+        this.getAllusers()
       })
   }
 }

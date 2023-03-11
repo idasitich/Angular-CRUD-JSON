@@ -1,11 +1,3 @@
 {
-  "users": [
-    {
-      "code": "70",
-      "name": "bowo",
-      "salary": "10000000",
-      "role": "hahha",
-      "id": 2
-    }
-  ]
+  "users": []
 }
