@@ -18,7 +18,7 @@ export class EmploymentsComponent {
   }
 
   userdata: any;
-  displayedColumns: string[] = ['Code', 'Name', 'Salary', 'Role','Action'];
+  displayedColumns: string[] = ['ID Card', 'Name', 'Salary', 'Role','Action'];
 
   update=false;
 
