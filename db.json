@@ -1,11 +1,11 @@
 {
   "users": [
     {
-      "code": "0909899",
-      "name": "Ipah",
-      "salary": "3 juta",
-      "role": "Mahasiswa",
-      "id": 1
+      "code": "12133444",
+      "name": "Niki",
+      "salary": "100000",
+      "role": "Student",
+      "id": 2
     }
   ]
 }
