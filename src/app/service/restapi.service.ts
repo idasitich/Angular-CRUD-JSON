@@ -10,16 +10,16 @@ export class RestapiService {
 
 
   GetallUsers(){
-    return this.http.get("http://localhost:3000/users");
+    return this.http.get("https://my-json-server.typicode.com/idasitich/Angular-CRUD-JSON/users/");
   }
   SaveUser(data:any){
-    return this.http.post("http://localhost:3000/users",data);
+    return this.http.post("https://my-json-server.typicode.com/idasitich/Angular-CRUD-JSON/users/",data);
   }
   deleteData(id: string){
-    return this.http.delete(`http://localhost:3000/users/${id}`)
+    return this.http.delete(`https://my-json-server.typicode.com/idasitich/Angular-CRUD-JSON/users/${id}`)
   }
   updateData(id: number, data: any){
-    return this.http.patch(`http://localhost:3000/users/${id}`, data)
+    return this.http.patch(`https://my-json-server.typicode.com/idasitich/Angular-CRUD-JSON/users/${id}`, data)
   }
 
 }
