@@ -6,6 +6,13 @@
       "salary": "100000",
       "role": "Student",
       "id": 2
+    },
+    {
+      "code": "70",
+      "name": "Ipah",
+      "salary": "100000",
+      "role": "Student",
+      "id": 3
     }
   ]
 }
