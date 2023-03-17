@@ -17,33 +17,33 @@
       <button mat-flat-button color="warn" (click)="deleteUser(item.id)">Delete</button>
     </td>
   </tr>
-</tbody>
+  </tbody>
 </table>
 
 <div [id]="show" class="hidden" >
   <form class="content" #updateNew="ngForm" (ngSubmit)="updateNewUser(number.value, updateNew.value)" >
     <a class="close" href="#">&times;</a>
-            <mat-list role="list">
-            <mat-form-field class="example-form" style="display: none;">
-            <mat-label>No</mat-label>
-            <input #number matInput name="code" [value]="id">
-            </mat-form-field>
-            <mat-form-field class="example-form">
-            <mat-label>ID Card</mat-label>
-            <input matInput [ngModel]="code" name="code" [value]="code">
-            </mat-form-field>
-            <mat-form-field class="example-form">
-            <mat-label>Name</mat-label>
-            <input matInput [ngModel]="name" name="name" [value]="name">
-            </mat-form-field>
-            <mat-form-field class="example-form">
-            <mat-label>Salary</mat-label>
-            <input matInput [ngModel]="salary"  name="salary" [value]="salary">
-            </mat-form-field>
-            <mat-form-field class="example-form">
-            <mat-label>Role</mat-label>
-            <input matInput [ngModel]="role" name="role"[value]="role">
-            </mat-form-field>
+      <mat-list role="list">
+        <mat-form-field class="example-form" style="display: none;">
+          <mat-label>No</mat-label>
+          <input #number matInput name="code" [value]="id">
+        </mat-form-field>
+        <mat-form-field class="example-form">
+          <mat-label>ID Card</mat-label>
+          <input matInput [ngModel]="code" name="code" [value]="code">
+        </mat-form-field>
+        <mat-form-field class="example-form">
+          <mat-label>Name</mat-label>
+          <input matInput [ngModel]="name" name="name" [value]="name">
+        </mat-form-field>
+        <mat-form-field class="example-form">
+          <mat-label>Salary</mat-label>
+          <input matInput [ngModel]="salary"  name="salary" [value]="salary">
+        </mat-form-field>
+        <mat-form-field class="example-form">
+          <mat-label>Role</mat-label>
+          <input matInput [ngModel]="role" name="role"[value]="role">
+        </mat-form-field>
       </mat-list>
       <button mat-flat-button color="primary" style="width: 50%;">Update</button>
   </form>
